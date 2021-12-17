@@ -54,6 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">Salir</a>
                     </li>
+                    <li class="nav-item">
+                        <img style="width: 50px; border-radius:50%" src="imagenes/<?= $_SESSION['avatar'];?>" alt="Avatar">       
+                    </li>
                 </ul>
             <?php endif; ?>    
             <form class="d-flex">

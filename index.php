@@ -26,7 +26,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Clase 4 - PHP -MYSQL</title>
+    <title>Clase 12 - PHP -MYSQL</title>
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
@@ -56,7 +56,54 @@
         </div> 
         <section>
             <h1 class="text-center bg-info text-white p-3" >Tu mascota te está esperando</h1>
-        </section>            
+        </section>  
+        <section class="row">
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/foto1.jpg" class="card-img-top" alt="Perrita">
+                    <div class="card-body">
+                        <h5 class="card-title">Lola</h5>
+                        <p class="card-text">Perrita muy bonita.</p>
+                        <p class="card-text">Aporte: $100</p>
+                        <a href="#" class="btn btn-primary">Ver detalle</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/foto2.jpg" class="card-img-top" alt="Gatita">
+                    <div class="card-body">
+                        <h5 class="card-title">Sofia</h5>
+                        <p class="card-text">Es un gatita muy linda.</p>
+                        <p class="card-text">Aporte: $200</p>
+                        <a href="#" class="btn btn-primary">Ver detalle</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/foto3.jpg" class="card-img-top" alt="Perrita">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelusa</h5>
+                        <p class="card-text">Es una perrita muy cariñosa.</p>
+                        <p class="card-text">Aporte: $300</p>
+                        <a href="#" class="btn btn-primary">Ver detalle</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imagenes/foto4.jpg" class="card-img-top" alt="Perrita">
+                    <div class="card-body">
+                        <h5 class="card-title">Nala</h5>
+                        <p class="card-text">Es una perrita muy chillona</p>
+                        <p class="card-text">Aporte: $400</p>
+                        <a href="#" class="btn btn-primary">Ver detalle</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>          
         <?php require('partials/navegacion.php')  ?>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
