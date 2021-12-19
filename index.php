@@ -85,7 +85,7 @@
                     <img src="imagenes/foto3.jpg" class="card-img-top" alt="Perrita">
                     <div class="card-body">
                         <h5 class="card-title">Pelusa</h5>
-                        <p class="card-text">Es una perrita muy cariñosa.</p>
+                        <p class="card-text">Es una perrita muy consentida.</p>
                         <p class="card-text">Aporte: $300</p>
                         <a href="#" class="btn btn-primary">Ver detalle</a>
                     </div>
