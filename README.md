@@ -1,16 +1,16 @@
 # php-mysql-aplicacion-web
 Desarrollo de una aplicación muy sencilla, desarrollada con HTML - Bootstrap - PHP - (PDO)- Mysql. (Login - Registro - Create Read Update Delete)
 
-function buscarPorEmail($bd,$tabla,$email){
-    //1.- Armar la consulta
-    $sql = "select * from $tabla where email = '$email'";
-    //2.- Preparar la consulta
-    $query = $bd->prepare($sql);
-    //3.- Ejecutar la consulta
-    $query->execute();
-    //4.- Traer los datos de la consulta
-    $usuario = $query->fetch(PDO::FETCH_ASSOC);
-    //dd($usuario);
-    return $usuario;
-}
+
+
+<br>
+<hr>
+<br>
+<h1>Curso: Desarrollo web con JavaScript ES-6 </h1>
+<br>
+<img  src='https://cedavilu.com/wp-content/uploads/2021/11/banner-hotmart.png' alt='Curso: Desarrollo web con JavaScript ES-6'>
+<br>
+<a href= "https://go.hotmart.com/V62266206C" target="_blank" >Información del curso<a/>
+<hr>
+
 
