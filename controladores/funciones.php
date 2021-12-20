@@ -145,7 +145,7 @@ function guardarUsuarioBD($bd,$tabla,$datos,$imagen){
 }
 //Función para Listar los usuarios registrados en la tabla ( usuarios ) de la Base de datos
 
-function listarUsuarios($bd,$tabla){
+function listar($bd,$tabla){
     //1.- Armar la consulta
     $sql = "select * from  $tabla";
     //2.- Preparar la consulta
@@ -153,9 +153,9 @@ function listarUsuarios($bd,$tabla){
     //3.- Ejecutar la consulta
     $query->execute();
     //4.- Traer los datos de la consulta
-    $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
+    $resultados = $query->fetchAll(PDO::FETCH_ASSOC);
     //dd($usuarios);
-    return $usuarios;
+    return $resultados;
 }
 
 
@@ -177,17 +177,24 @@ function validarUsuarioLogin($datos){
 }
 
 //Buscamos por email al usuario que se está logueando
-function buscarPorEmail($bd,$tabla,$email){
+function buscar($bd,$tabla,$dato){
+    //dd($_GET);
     //1.- Armar la consulta
-    $sql = "select * from $tabla where email = '$email'";
+    
+    if($_POST){
+        $sql = "select * from $tabla where email = '$dato'";    
+    }else{
+        $sql = "select * from $tabla where id = $dato";
+    }
+    
     //2.- Preparar la consulta
     $query = $bd->prepare($sql);
     //3.- Ejecutar la consulta
     $query->execute();
     //4.- Traer los datos de la consulta
-    $usuario = $query->fetch(PDO::FETCH_ASSOC);
+    $resultato = $query->fetch(PDO::FETCH_ASSOC);
     //dd($usuario);
-    return $usuario;
+    return $resultato;
 }
 
 //Función para setear el usuario (Session - Cookies)

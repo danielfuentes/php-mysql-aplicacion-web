@@ -1,7 +1,7 @@
 <?php
     require_once('controladores/funciones.php');
     $bd = conexion('localhost','mascotas','root','');
-    $usuarios = listarUsuarios($bd,'usuarios');
+    $usuarios = listar($bd,'usuarios');
     //dd($usuarios);
 
 ?>

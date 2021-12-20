@@ -17,7 +17,7 @@ if ($_POST) {
         //Conectar a la Base de Datos
         $bd = conexion('localhost','mascotas','root','');
         //Debemos buscar al usuario por el email
-        $usuario = buscarPorEmail($bd, 'usuarios', $email);
+        $usuario = buscar($bd, 'usuarios', $email);
         //dd($usuario);
         if($usuario === false){
             $errores['email'] = 'El usuario o contraseña son inválidos';
